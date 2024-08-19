@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    
+    <nav>
+        <ul>
+            <li><a href="#"><i class="fab fa-apple"></i></a></li>
+            <li><a href="#">Mac</a></li>  
+            <li><a href="#">iPad</a></li>  
+            <li><a href="#">iPhone</a></li>  
+            <li><a href="#">Watch</a></li>  
+            <li><a href="#">TV</a></li>  
+            <li><a href="#">Music</a></li>  
+            <li><a href="#">Service</a></li>  
+            <li id="cart-icon"><a href="#"><i class="fas fa-shopping-bag"></i></a></li>  
+        </ul>
+    </nav>
+
+    <!-- Modal for Cart -->
+<div id="cart-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <p>Total: <span id="cart-total">฿0</span></p>
+        <button id="checkout">Checkout</button>
+    </div>
+</div>
+
+
+    <section class="welcome">
+        <h1>Shop for your favorite Apple products.</h1>
+    </section>
+
+    <section class="product-mac">
+        <div class="container">
+            <h2>Mac</h2>
+            <div class="grid">
+                <div class="grid-product">
+                    <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/macbook-air-segment?wid=800&hei=600&fmt=png-alpha&qlt=80&.v=1573580916082" alt="MacBook Air">
+                    <div class="grid-detail">
+                        <p>MacBook Air</p>
+                        <p>From ฿35,000</p>
+                        <button class="add-to-cart" data-product="MacBook Air" data-price="35000" data-image="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/macbook-air-segment?wid=800&hei=600&fmt=png-alpha&qlt=80&.v=1573580916082">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="grid-product">
+                    <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/macbook-air-segment?wid=800&hei=600&fmt=png-alpha&qlt=80&.v=1573580916082" alt="MacBook Air">
+                    <div class="grid-detail">
+                        <p>MacBook Air</p>
+                        <p>From ฿35,000</p>
+                        <button class="add-to-cart" data-product="MacBook Air" data-price="35000" data-image="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/macbook-air-segment?wid=800&hei=600&fmt=png-alpha&qlt=80&.v=1573580916082">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="grid-product">
+                    <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/macbook-air-segment?wid=800&hei=600&fmt=png-alpha&qlt=80&.v=1573580916082" alt="MacBook Air">
+                    <div class="grid-detail">
+                        <p>MacBook Air</p>
+                        <p>From ฿35,000</p>
+                        <button class="add-to-cart" data-product="MacBook Air" data-price="35000" data-image="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/macbook-air-segment?wid=800&hei=600&fmt=png-alpha&qlt=80&.v=1573580916082">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-iphone">
+        <div class="container">
+            <h2>iPhone</h2>
+            <div class="grid">
+                <div class="grid-product">
+                    <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-11-pro-segment-201909?wid=800&hei=600&fmt=png-alpha&qlt=80&.v=1567201566801" alt="iPhone 11 Pro">
+                    <div class="grid-detail">
+                        <p>iPhone 11 Pro</p>
+                        <p>From ฿35,900</p>
+                        <button class="add-to-cart" data-product="iPhone 11 Pro" data-price="35900" data-image="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-11-pro-segment-201909?wid=800&hei=600&fmt=png-alpha&qlt=80&.v=1567201566801">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="grid-product">
+                    <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-11-pro-segment-201909?wid=800&hei=600&fmt=png-alpha&qlt=80&.v=1567201566801" alt="iPhone 11 Pro">
+                    <div class="grid-detail">
+                        <p>iPhone 11 Pro</p>
+                        <p>From ฿35,900</p>
+                        <button class="add-to-cart" data-product="iPhone 11 Pro" data-price="35900" data-image="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-11-pro-segment-201909?wid=800&hei=600&fmt=png-alpha&qlt=80&.v=1567201566801">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="grid-product">
+                    <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-11-pro-segment-201909?wid=800&hei=600&fmt=png-alpha&qlt=80&.v=1567201566801" alt="iPhone 11 Pro">
+                    <div class="grid-detail">
+                        <p>iPhone 11 Pro</p>
+                        <p>From ฿35,900</p>
+                        <button class="add-to-cart" data-product="iPhone 11 Pro" data-price="35900" data-image="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-11-pro-segment-201909?wid=800&hei=600&fmt=png-alpha&qlt=80&.v=1567201566801">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-watch">
+        <div class="container">
+            <h2>Watch</h2>
+            <div class="grid">
+                <div class="grid-product">
+                    <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/apple-watch-series-5-segment-201909?wid=800&hei=600&fmt=png-alpha&qlt=80&.v=1567038391208" alt="Apple Watch Series 5">
+                    <div class="grid-detail">
+                        <p>Apple Watch Series 5</p>
+                        <p>From ฿13,400</p>
+                        <button class="add-to-cart" data-product="Apple Watch Series 5" data-price="13400" data-image="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/apple-watch-series-5-segment-201909?wid=800&hei=600&fmt=png-alpha&qlt=80&.v=1567038391208">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="grid-product">
+                    <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/apple-watch-series-5-segment-201909?wid=800&hei=600&fmt=png-alpha&qlt=80&.v=1567038391208" alt="Apple Watch Series 5">
+                    <div class="grid-detail">
+                        <p>Apple Watch Series 5</p>
+                        <p>From ฿13,400</p>
+                        <button class="add-to-cart" data-product="Apple Watch Series 5" data-price="13400" data-image="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/apple-watch-series-5-segment-201909?wid=800&hei=600&fmt=png-alpha&qlt=80&.v=1567038391208">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="grid-product">
+                    <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/apple-watch-series-5-segment-201909?wid=800&hei=600&fmt=png-alpha&qlt=80&.v=1567038391208" alt="Apple Watch Series 5">
+                    <div class="grid-detail">
+                        <p>Apple Watch Series 5</p>
+                        <p>From ฿13,400</p>
+                        <button class="add-to-cart" data-product="Apple Watch Series 5" data-price="13400" data-image="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/apple-watch-series-5-segment-201909?wid=800&hei=600&fmt=png-alpha&qlt=80&.v=1567038391208">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-ipad">
+        <div class="container">
+            <h2>iPod and Apple TV</h2>
+            <div class="grid-full">
+                <div class="grid-product">
+                    <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/segment-hero-ipod-touch-201509?wid=400&hei=300&fmt=png-alpha&.v=1491260462715" alt="iPod Touch">
+                    <div class="grid-detail">
+                        <p>iPod Touch</p>
+                        <p>From ฿6,900</p>
+                        <button class="add-to-cart" data-product="iPod Touch" data-price="6900" data-image="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/segment-hero-ipod-touch-201509?wid=400&hei=300&fmt=png-alpha&.v=1491260462715">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="grid-product">
+                    <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/segment-hero-apple-tv4k-201709?wid=400&hei=300&fmt=png-alpha&.v=1504891668090" alt="Apple TV 4K">
+                    <div class="grid-detail">
+                        <p>Apple TV 4K</p>
+                        <p>From ฿7,528</p>
+                        <button class="add-to-cart" data-product="Apple TV 4K" data-price="7528" data-image="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/segment-hero-apple-tv4k-201709?wid=400&hei=300&fmt=png-alpha&.v=1504891668090">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="grid-product">
+                    <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/segment-hero-apple-tv4k-201709?wid=400&hei=300&fmt=png-alpha&.v=1504891668090" alt="Apple TV 4K">
+                    <div class="grid-detail">
+                        <p>Apple TV 4K</p>
+                        <p>From ฿7,528</p>
+                        <button class="add-to-cart" data-product="Apple TV 4K" data-price="7528" data-image="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/segment-hero-apple-tv4k-201709?wid=400&hei=300&fmt=png-alpha&.v=1504891668090">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="grid-product">
+                    <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/segment-hero-apple-tv4k-201709?wid=400&hei=300&fmt=png-alpha&.v=1504891668090" alt="Apple TV 4K">
+                    <div class="grid-detail">
+                        <p>Apple TV 4K</p>
+                        <p>From ฿7,528</p>
+                        <button class="add-to-cart" data-product="Apple TV 4K" data-price="7528" data-image="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/segment-hero-apple-tv4k-201709?wid=400&hei=300&fmt=png-alpha&.v=1504891668090">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
